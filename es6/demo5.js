@@ -1,3 +1,4 @@
+//arrow function
 let myFun = function(){
     console.log("Hello My Function");
 }

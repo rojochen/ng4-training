@@ -1,3 +1,4 @@
+//let syntax
 let count = 1
 if(true){
     let count =10;

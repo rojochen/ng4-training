@@ -1,3 +1,4 @@
+//es5 hosting 
 function test(){
     console.log(name); 
     for(var i=1 ; i<3 ;i++){
@@ -8,4 +9,4 @@ function test(){
     console.log(name);
 }
 test();
-console.log(name)
+console.log(name);

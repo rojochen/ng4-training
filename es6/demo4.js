@@ -1,3 +1,4 @@
+//const object syntax
 const NUM_ARRAY = [55,66,77,88];
 const NEW_OBJECT ={
     name : "Joe"

@@ -11,6 +11,11 @@ import { EventBindComponent } from './dataBind/event-bind/event-bind.component';
 import { TwoWayBindComponent } from './dataBind/two-way-bind/two-way-bind.component';
 import { TemplateDrivenComponent } from './form/template-driven/template-driven.component';
 import { ReactiveComponent } from './form/reactive/reactive.component';
+import { NgIfComponent } from './common-directives/ng-if/ng-if.component';
+import { NgSwitchComponent } from './common-directives/ng-switch/ng-switch.component';
+import { NgStyleComponent } from './common-directives/ng-style/ng-style.component';
+import { NgClassComponent } from './common-directives/ng-class/ng-class.component';
+import { NgForComponent } from './common-directives/ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { ReactiveComponent } from './form/reactive/reactive.component';
     EventBindComponent,
     TwoWayBindComponent,
     TemplateDrivenComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    NgIfComponent,
+    NgSwitchComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

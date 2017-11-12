@@ -1,0 +1,8 @@
+<!-- Use boolean value -->
+<div [ngClass]="{bordered: false}">This is never bordered</div>
+<div [ngClass]="{bordered: true}">This is always bordered</div>
+
+<!-- Use component instance property -->
+<div [ngClass]="{bordered: isBordered}">
+  Using object literal. Border {{ isBordered ? "ON" : "OFF" }}
+</div>

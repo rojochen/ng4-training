@@ -1,7 +1,9 @@
+// Module
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// Component template
 import { AppComponent } from './app.component';
 import { ClassbindComponent } from './dataBind/classbind/classbind.component';
 import { StyleBindComponent } from './dataBind/style-bind/style-bind.component';
@@ -16,6 +18,13 @@ import { NgSwitchComponent } from './common-directives/ng-switch/ng-switch.compo
 import { NgStyleComponent } from './common-directives/ng-style/ng-style.component';
 import { NgClassComponent } from './common-directives/ng-class/ng-class.component';
 import { NgForComponent } from './common-directives/ng-for/ng-for.component';
+import { ParentComponent } from './io/parent/parent.component';
+import { ChildComponent } from './io/child/child.component';
+import { Component } from '@angular/core/src/metadata/directives';
+import { Services } from '@angular/core/src/view';
+
+// Services
+import {  } from './io/member-info.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +41,9 @@ import { NgForComponent } from './common-directives/ng-for/ng-for.component';
     NgSwitchComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgForComponent
+    NgForComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

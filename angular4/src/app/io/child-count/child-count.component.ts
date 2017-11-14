@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child-count',
@@ -7,10 +7,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ChildCountComponent implements OnInit {
-
+  @Input() count = 0;
+  @Output() result = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit() {
+  }
+  increment() {
+    this.count++;
+    this.result.emit(this.count);
   }
 
 }

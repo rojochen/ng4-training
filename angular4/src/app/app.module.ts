@@ -27,6 +27,8 @@ import { ChildCountComponent } from './IO/child-count/child-count.component';
 
 // Services
 import { ProductInfoService } from './io/product-info.service';
+import { FilterNameComponent } from './pipe/filter-name/filter-name.component';
+import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { ProductInfoService } from './io/product-info.service';
     ParentComponent,
     ChildComponent,
     ParentCountComponent,
-    ChildCountComponent
+    ChildCountComponent,
+    FilterNameComponent,
+    FilterNamePipe
   ],
   imports: [
     BrowserModule,

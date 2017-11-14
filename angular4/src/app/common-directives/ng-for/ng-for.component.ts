@@ -7,7 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class NgForComponent implements OnInit {
-
+  collection: Array<any>;
   constructor() {
     this.collection = [{ id: 1 }, { id: 2 }, { id: 3 }];
   }

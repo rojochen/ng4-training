@@ -24,7 +24,7 @@ import { Component } from '@angular/core/src/metadata/directives';
 import { Services } from '@angular/core/src/view';
 
 // Services
-import {  } from './io/member-info.service';
+import { ProductInfoService } from './io/product-info.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ import {  } from './io/member-info.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

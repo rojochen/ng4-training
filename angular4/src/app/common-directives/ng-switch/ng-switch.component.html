@@ -1,21 +1,29 @@
 <div class="container">
-  <div *ngIf="myVar == 'A'">Var is A</div>
-  <div *ngIf="myVar == 'B'">Var is B</div>
-  <div *ngIf="myVar != 'A' && myVar != 'B'">Var is something else</div>
-</div>
-<hr>
-<div class="container">
-  <div *ngIf="myVar == 'A'">Var is A</div>
-  <div *ngIf="myVar == 'B'">Var is B</div>
-  <div *ngIf="myVar == 'C'">Var is C</div>
-  <div *ngIf="myVar != 'A' && myVar != 'B' && myVar != 'C'">
-    Var is something else
+  <h2>*ngSwitch</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">*ngSwitch</div>
+    <div class="panel-body">
+      <div class="container">
+        <div *ngIf="myVar == 'A'">Var is A</div>
+        <div *ngIf="myVar == 'B'">Var is B</div>
+        <div *ngIf="myVar != 'A' && myVar != 'B'">Var is something else</div>
+      </div>
+      <hr>
+      <div class="container">
+        <div *ngIf="myVar == 'A'">Var is A</div>
+        <div *ngIf="myVar == 'B'">Var is B</div>
+        <div *ngIf="myVar == 'C'">Var is C</div>
+        <div *ngIf="myVar != 'A' && myVar != 'B' && myVar != 'C'">
+          Var is something else
+        </div>
+      </div>
+      <hr>
+      <div class="container" [ngSwitch]="myVar">
+        <div *ngSwitchCase="'A'">Var is A</div>
+        <div *ngSwitchCase="'B'">Var is B</div>
+        <div *ngSwitchCase="'C'">Var is C</div>
+        <div *ngSwitchDefault>Var is something else</div>
+      </div>
+    </div>
   </div>
-</div>
-<hr>
-<div class="container" [ngSwitch]="myVar">
-  <div *ngSwitchCase="'A'">Var is A</div>
-  <div *ngSwitchCase="'B'">Var is B</div>
-  <div *ngSwitchCase="'C'">Var is C</div>
-  <div *ngSwitchDefault>Var is something else</div>
 </div>

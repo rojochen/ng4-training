@@ -14,7 +14,10 @@ export class ParentCountComponent implements OnInit, OnChanges {
     this.parentCount = 0;
   }
   ngOnChanges(val) {
-    this.parentCount = val;
+  }
+  countChange(event: number) {
+    console.log('event: ', event);
+    this.parentCount = event;
   }
   ngOnInit() {
   }

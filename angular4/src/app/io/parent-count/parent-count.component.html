@@ -5,7 +5,7 @@
     <div class="panel-body">
       <p>Parent Num: {{ num }}</p>
       <p>Parent Count: {{ parentCount }}</p>
-      <app-child-count [count]="num" (result)="ngOnChanges($event)"></app-child-count>
+      <app-child-count [count]="num" (result)="countChange($event)"></app-child-count>
     </div>
   </div>
 </div>

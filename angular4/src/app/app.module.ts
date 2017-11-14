@@ -22,11 +22,12 @@ import { ParentComponent } from './io/parent/parent.component';
 import { ChildComponent } from './io/child/child.component';
 import { Component } from '@angular/core/src/metadata/directives';
 import { Services } from '@angular/core/src/view';
+import { ParentCountComponent } from './IO/parent-count/parent-count.component';
+import { ChildCountComponent } from './IO/child-count/child-count.component';
 
 // Services
 import { ProductInfoService } from './io/product-info.service';
-import { ParentCountComponent } from './IO/parent-count/parent-count.component';
-import { ChildCountComponent } from './IO/child-count/child-count.component';
+
 
 @NgModule({
   declarations: [

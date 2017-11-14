@@ -25,6 +25,8 @@ import { Services } from '@angular/core/src/view';
 
 // Services
 import { ProductInfoService } from './io/product-info.service';
+import { ParentCountComponent } from './IO/parent-count/parent-count.component';
+import { ChildCountComponent } from './IO/child-count/child-count.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ProductInfoService } from './io/product-info.service';
     NgClassComponent,
     NgForComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ParentCountComponent,
+    ChildCountComponent
   ],
   imports: [
     BrowserModule,

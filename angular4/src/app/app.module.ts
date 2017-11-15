@@ -29,6 +29,7 @@ import { ChildCountComponent } from './IO/child-count/child-count.component';
 import { ProductInfoService } from './io/product-info.service';
 import { FilterNameComponent } from './pipe/filter-name/filter-name.component';
 import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
+import { FifterTemplateComponent } from './pipe/fifter-template/fifter-template.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
     ParentCountComponent,
     ChildCountComponent,
     FilterNameComponent,
-    FilterNamePipe
+    FilterNamePipe,
+    FifterTemplateComponent
   ],
   imports: [
     BrowserModule,

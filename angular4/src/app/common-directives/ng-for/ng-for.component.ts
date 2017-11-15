@@ -25,5 +25,8 @@ export class NgForComponent implements OnInit {
   trackByFn(index, item) {
     return index; // or item.id
   }
+  selectChange(event) {
+    console.log('event: ', event);
+  }
 
 }

@@ -24,12 +24,15 @@ import { Component } from '@angular/core/src/metadata/directives';
 import { Services } from '@angular/core/src/view';
 import { ParentCountComponent } from './IO/parent-count/parent-count.component';
 import { ChildCountComponent } from './IO/child-count/child-count.component';
+import { FifterTemplateComponent } from './pipe/fifter-template/fifter-template.component';
+import { CustomFilterComponent } from './pipe/custom-filter/custom-filter.component';
+import { FilterNameComponent } from './pipe/filter-name/filter-name.component';
 
 // Services
 import { ProductInfoService } from './io/product-info.service';
-import { FilterNameComponent } from './pipe/filter-name/filter-name.component';
+// pipe
 import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
-import { FifterTemplateComponent } from './pipe/fifter-template/fifter-template.component';
+
 
 
 @NgModule({
@@ -54,7 +57,8 @@ import { FifterTemplateComponent } from './pipe/fifter-template/fifter-template.
     ChildCountComponent,
     FilterNameComponent,
     FilterNamePipe,
-    FifterTemplateComponent
+    FifterTemplateComponent,
+    CustomFilterComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,7 @@ export class CustomFilterComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log($(window).width());
   }
 
 }

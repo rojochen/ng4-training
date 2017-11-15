@@ -6,13 +6,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FilterNumPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return value.filter(list => {
-      if (args) {
-        return args === list;
-      } else {
-        return list;
-      }
-    });
+    if (!args) {
+      return value;
+    } else {
+      return value.filter(list => {
+          return args === list;
+      });
+    }
   }
 
 }

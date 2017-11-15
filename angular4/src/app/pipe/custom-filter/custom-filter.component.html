@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Angular 自訂 filter</h2>
+    <div class="panel panel-default">
+      <div class="panel-heading">Angular 自訂 filter</div>
+      <div class="panel-body">
+        <input type="number" name="" [(ngModel)]="searchNum">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor=" let list of (numberList | filterNum: searchNum)">{{list}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>

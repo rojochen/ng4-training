@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>子傳父</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">子傳父</div>
+    <div class="panel-body">
+      <p>Parent Num: {{ num }}</p>
+      <p>Parent Count: {{ parentCount }}</p>
+      <app-child-count [count]="num" (result)="countChange($event)"></app-child-count>
+    </div>
+  </div>
+</div>

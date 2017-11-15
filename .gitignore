@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 ts/node_modules/*
 node_modules/
+=======
+.DS_Store
+>>>>>>> 6ba04cf713bc4f00a8b747134ab8a8fb432add4b

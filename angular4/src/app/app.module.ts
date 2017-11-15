@@ -32,6 +32,7 @@ import { FilterNameComponent } from './pipe/filter-name/filter-name.component';
 import { ProductInfoService } from './io/product-info.service';
 // pipe
 import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
+import { FilterNumPipe } from './pipe/custom-filter/filter-num.pipe';
 
 
 
@@ -58,7 +59,8 @@ import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
     FilterNameComponent,
     FilterNamePipe,
     FifterTemplateComponent,
-    CustomFilterComponent
+    CustomFilterComponent,
+    FilterNumPipe
   ],
   imports: [
     BrowserModule,

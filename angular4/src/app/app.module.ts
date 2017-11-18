@@ -33,6 +33,7 @@ import { ProductInfoService } from './io/product-info.service';
 // pipe
 import { FilterNamePipe } from './pipe/filter-name/filter-name.pipe';
 import { FilterNumPipe } from './pipe/custom-filter/filter-num.pipe';
+import { NgTemplateComponent } from './common-directives/ng-template/ng-template.component';
 
 
 
@@ -60,7 +61,8 @@ import { FilterNumPipe } from './pipe/custom-filter/filter-num.pipe';
     FilterNamePipe,
     FifterTemplateComponent,
     CustomFilterComponent,
-    FilterNumPipe
+    FilterNumPipe,
+    NgTemplateComponent
   ],
   imports: [
     BrowserModule,

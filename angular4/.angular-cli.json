@@ -1,34 +1,33 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular4" //專案名稱
+    "name": "angular4"
   },
   "apps": [
     {
-      "root": "src", //根目錄
-      "outDir": "dist", //ng build後的輸出目錄
-      "assets": [ //這個陣列會列出有哪些檔案或資料夾是 angular-cli 在建置 ( ng build ) 時需要一起複製到專案輸出作為準備佈署的資料夾（ 預設是 dist ）中
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
         "assets",
         "favicon.ico"
       ],
-      "index": "index.html", //指定首頁檔案，預設是index.html
-      "main": "main.ts", // 建置angular的入口點
-      "polyfills": "polyfills.ts", //專案產出時會引入polyfills.ts，主要的是提供對未來ES6/7的規格特性的支援
-      "test": "test.ts", //Unit test 入口檔案
-      "tsconfig": "tsconfig.app.json", //指定tsconfig檔案
-      "testTsconfig": "tsconfig.spec.json", //TypeScript測試的tsconfig文件
-      "prefix": "app", // 生成元件的開頭，預設為”app”,
-      // "deployUrl": 設置網站URL “cdn.com”
-      "styles": [ //引入全域CSS/SASS/SCSS/LESS，構建時會打包進來，常用於第三方Library
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
-      "scripts": [ //引入全域javascipt，構建時會打包進來，常用於第三方Library
+      "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],
-      "environmentSource": "environments/environment.ts", //基本環境配置
-      "environments": { //子環境配置
+      "environmentSource": "environments/environment.ts",
+      "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
@@ -58,13 +57,8 @@
       "config": "./karma.conf.js"
     }
   },
-  "defaults": { //執行`ng generate`指令時的一些預設值
-    "styleExt": "css", //預設project 樣式格式
-    "component": {
-      //"flat": false, //生成元件時是否新建文件夹包装组件文件，預設為false（即新建文件夹）
-      //"spec": true, // 是否生成spec文件，默认为true
-      //"inlineStyle": false, // 新建時是否使用內聯樣式，預設為false
-      //"inlineTemplate": false, // 新建時是否使用內聯範本，預設為false
-    }
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
   }
 }

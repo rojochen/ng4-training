@@ -1,3 +1,4 @@
+//預設參數從method取得值
 function append(value, array = getArray()) {
     array.push(value);
     return array;

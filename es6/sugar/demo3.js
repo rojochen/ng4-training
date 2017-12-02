@@ -8,4 +8,5 @@ let obj ={
     first,
     last
 }
+//`這裡面使用的${obj.proprety}`
 console.log( `His name is ${obj.first} ${obj.last}.`);

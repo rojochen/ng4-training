@@ -1,4 +1,3 @@
-
 var isWindow =  function( obj ) {
     //jquery source code
     return obj && typeof obj === "object" && "setInterval" in obj;

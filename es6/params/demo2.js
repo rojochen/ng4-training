@@ -1,8 +1,10 @@
 //預設參數從method取得值
+//增加值到陣列
 function append(value, array = getArray()) {
     array.push(value);
     return array;
   }
+//
 let getArray = ()=>{
     return [];
 };

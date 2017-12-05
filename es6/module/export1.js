@@ -12,5 +12,4 @@ export class ExportClass {
     this.age = age
   }
 }
-
  

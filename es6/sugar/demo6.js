@@ -1,3 +1,4 @@
+//REST operator 
 {
     let nums  ;
     //預設參數偷入陣例

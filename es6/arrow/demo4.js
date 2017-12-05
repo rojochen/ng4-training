@@ -15,5 +15,4 @@
     }
     man.say("Hello");
     man.do("run");
- 
 }

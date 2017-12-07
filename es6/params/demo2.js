@@ -5,9 +5,8 @@ function append(value, array = getArray()) {
     return array;
   }
 //
-let getArray = ()=>{
-    return [];
-};
+let getArray = ()=>[];
+
 append(1); //[1]
 append(2); //[2], not [1, 2]
 let array = append(3,append(2));

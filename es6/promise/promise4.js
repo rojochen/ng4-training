@@ -21,7 +21,12 @@ const getPromise = (state=true,index) => {
 }
 //async 表示該 function 是個非同步的
 async function process() {
-    let p1 = await getPromise(true,1);//await 表示要等待這個非同步的結果回傳後才會繼續執行
+    //await 表示要等待這個非同步的結果回傳後才會繼續執行
+    console.log(" Start");
+    let p1 = await getPromise(true,1);
+    console.log(" await 1");
     let p2 = await getPromise(true,2);
+    console.log(" await 2");
+    console.log(" end ");
 };
 process();

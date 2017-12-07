@@ -9,7 +9,7 @@ interface PenStroke {
 interface Square extends Shape, PenStroke {
     sideLength: number;
 }
-
+//空物件轉型成Square
 let square = <Square>{};
 square.color = "blue";
 square.sideLength = 10;

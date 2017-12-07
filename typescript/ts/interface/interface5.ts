@@ -1,5 +1,5 @@
 interface SearchFunc {
-    //定義function 的型別
+    //定義function 的型別 , interface有匿名承數的寫法
     (source: string, subString: string): boolean;
 }
 let mySearch: SearchFunc;

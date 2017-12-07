@@ -1,6 +1,5 @@
-let passcode = "secret passcode";
-
 class Employee {
+    //get-set 
     private _fullName: string;
     //C# Style
     get fullName(): string {
@@ -11,7 +10,6 @@ class Employee {
         this._fullName = newName;
     }
 }
-
 let employee = new Employee();
 employee.fullName = "Bob Smith";
 if (employee.fullName) {

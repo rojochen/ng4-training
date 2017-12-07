@@ -1,9 +1,11 @@
-//es5 style ,validate args
+//es5 style ,
 function multiply(a, b) {
+    //validate args
     b = (typeof b !== 'undefined') ?  b : 1;
     return a * b;
   }
 /*
+es6 style
 function multiply(a, b = 1) {
   return a * b;
 }*/

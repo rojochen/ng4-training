@@ -18,8 +18,9 @@ class Animal {
     }
 }
 
+//繼承關係
+class Dog extends Animal { 
 
-class Dog extends Animal { //只有子類別才能調用
 	constructor(name: string) { 
 		super(name); //父類別的建構子
 	}
@@ -42,5 +43,5 @@ class Cat extends Animal {
         super.move(distanceInMeters);
     }
 }
-let sam = new Dog("Sammy the Python");
-let tom: Animal = new Cat("Tommy the Palomino");
+let dog = new Dog("小黑");
+let cat: Animal = new Cat("小黃");

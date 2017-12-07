@@ -1,8 +1,18 @@
 /// <reference path="Validation.ts" />
 /// <reference path="LettersOnlyValidator.ts" />
-function test(){
-    let strings:string[] = ["Hello", "98052", "101"];
+/// <reference path="ZipCodeValidator.ts" />
 
-    let validators: { [s: string]: Validation.StringValidator; } = {};
-    validators["Letters only"] = new Validation.LettersOnlyValidator();
+// Some samples to try
+let strings = ["Hello", "98052", "101"];
+
+// Validators to use
+let validators: { [s: string]: Validation.StringValidator; } = {};
+validators["ZIP code"] = new Validation.ZipCodeValidator();
+validators["Letters only"] = new Validation.LettersOnlyValidator();
+
+// Show whether each string passed each validator
+for (let s of strings) {
+    for (let name in validators) {
+        console.log( (validators[name].isAcceptable(s) ? " matches " : " does not match ") + name);
+    }
 }

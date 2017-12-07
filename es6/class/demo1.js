@@ -1,5 +1,5 @@
 var Person = function (firstName) {
-    //es6 function 也可是類別,這個function表示自己的constructor
+    //es5 function 也可是類別,這個function表示自己的constructor
     this.firstName = firstName;
     this.getFullName = function(){
         //第一次的取lastName,取不到去找_proto_物件找。

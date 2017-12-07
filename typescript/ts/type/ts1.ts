@@ -24,5 +24,8 @@ enum Color {
     GREEN,
     BLUE
 }
-let neverValue:never;
+let neverValue= function():never {
+    //never 使用在function return ,表示永遠不會執行完成的function
+    throw Error('Error');
+}
 let myColor :Color = Color.BLUE;

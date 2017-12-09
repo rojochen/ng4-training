@@ -5,6 +5,7 @@ class Point {
 		console.log("hello");
 	}
 }
+//interface extneds class
 interface Point3d extends Point {
 	z: number;
 }

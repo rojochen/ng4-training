@@ -25,11 +25,9 @@ class Dog extends Animal {
 		super(name); //父類別的建構子
 	}
 	move(distance = 45) {
-		console.log('移動');
 		super.move(distance);//
 	}
 	do(distanceInMeters = 45){
-		console.log("狗狗邊走邊吃");
 		this.eat(); //只有子類別才能調用
 		this.move()
 	}

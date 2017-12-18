@@ -1,20 +1,20 @@
-//es5 this 指的是呼叫的物件
+//es5 this 指的是呼叫的物件(timeout)
 setTimeout(function(){
     console.log('start timout');
     console.log(this);
-    console.log("hello timeout");
+    console.log("end timeout");
 },1000);
 
-//es6 this 指的是自己的物件(跟java比較像)
+//es6 this 外層作用域的this
 setTimeout(()=>{
     console.log('start arrow timout');
     console.log(this);
-    console.log("hello arrow function")},
+    console.log("end arrow function")},
 1000);
 
 //es5.1 this 可以綁定到function
 setTimeout(function(){
     console.log('start es5.1 timout');
     console.log(this);
-    console.log("hello  es5.1 timeout");
+    console.log("end  es5.1 timeout");
 }.bind(this),1000);

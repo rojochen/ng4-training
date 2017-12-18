@@ -5,6 +5,6 @@ let myFun = function(){
 myFun();
 //function  拿掉後面加arror
 let myFun1 = () =>{
-    console.log("Hello arror function");
+    console.log("Hello arrow function");
 }
 myFun1();

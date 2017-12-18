@@ -1,4 +1,4 @@
-{
+{   
     let man = {
     name:"Jay",
     say :(greeting)=>{

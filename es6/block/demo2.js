@@ -2,7 +2,7 @@
 let count = 1
 if(true){
     let count =10;
-    let conut =11;
+    count =11;
     console.log(count);
 }
 //es6 在{} 就是一個作用域(scope)

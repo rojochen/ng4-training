@@ -1,7 +1,7 @@
 //REST operator 
 {
     let nums  ;
-    //預設參數偷入陣例
+	//…nums 預設參數型別為陣例
     function sum(...nums){
         let total = 0 ;
         for(let i = 0 ; i<nums.length ; i++){

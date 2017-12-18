@@ -3,7 +3,7 @@
     let obj = {   
       value:100,
       getValue( ){
-          //直接寫程method
+          //直接使用function
           console.log(this.value)
        }
     }

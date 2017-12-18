@@ -10,4 +10,5 @@ Man.prototype.say = function() {
   return this.name;
 };
 var man = new Man('Jack');  
-man.say(); // => undefined  
+man.say(); // => Man { name: 'Jack' }  
+//man.do();//=>{}

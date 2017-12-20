@@ -7,9 +7,9 @@
     }
     let test = () => {
         //duck type
-        let persion = { message: "Hello man" };
-        let car = { type: "car", message: "Hello car" }
-        showMessage(persion);
+        let person = { message: "Hello man" };
+        let car = { type: "car", message: "Hello car" };
+        showMessage(person);
         showMessage(car);
     }
     test();

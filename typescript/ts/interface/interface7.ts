@@ -8,7 +8,9 @@ interface ClockInterface {
 }
 //實作
 class DigitalClock implements ClockInterface {
-    constructor(h: number, m: number) { }
+    constructor(h: number, m: number) { 
+        console.log('DigitalClock constructor');
+    }
     tick() {
         console.log("beep beep");
     }

@@ -2,16 +2,18 @@
 let suits = ["hearts", "spades", "clubs", "diamonds"];
 function pickCard(x: {suit: string; card: number; }[]): number;
 function pickCard(x: number): {suit: string; card: number; };
-function pickCard(x): any {
+function pickCard(x): any { 
     //依參數不同型別回傳不同型態的值
     if (typeof x == "object") {
         //如果傳物件的話就隨便抽一張
         let pickedCard = Math.floor(Math.random() * x.length);
-        return pickedCard;
+        //傳陣例回傳抽到牌的index
+        return pickedCard; 
     }
     else if (typeof x == "number") {
         //傳入數字就選牌
         let pickedSuit = Math.floor(x / 13);
+        //傳數字回傳抽到的牌
         return { suit: suits[pickedSuit], card: x % 13 };
     }
 }

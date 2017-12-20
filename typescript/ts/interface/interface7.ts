@@ -19,10 +19,13 @@
     let cc: ClockConstructor;
     //實作interface的constructor
     let clock: DigitalClock = new cc(1, 1);
-    function checkObject(cc : ClockConstructor ){
+    function createObject(cc : ClockConstructor ){
         //interface 參數使用
         let concreteObject: DigitalClock = new cc(1,3);
         concreteObject.tick();
+        return concreteObject;
 
     } 
+    createObject(DigitalClock).tick();
+
 }

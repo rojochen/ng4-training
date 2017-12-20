@@ -2,15 +2,17 @@ namespace Validation {
 	//namespace content
 	export interface StringValidator {
 		isAcceptable(s: string): boolean;
-	}	const lettersRegexp = /^[A-Za-z]+$/;
+	}
+	const lettersRegexp = /^[A-Za-z]+$/;
 	const numberRegexp = /^[0-9]+$/;
-	 export class LettersOnlyValidator implements StringValidator {
-I		isAcceptable(s: string) {
-		    return lettersRegexp.test(s);
+	export class LettersValidator implements StringValidator {
+		isAcceptable(s: string): boolean {
+			return lettersRegexp.test(s);
 		}
-	}	export class ZipCodeValidator implements StringValidator {
-		isAcceptable(s: string) {
-		    return s.length === 5 && numberRegexp.test(s);
+	}
+	export class ZipValidator implements StringValidator {
+		isAcceptable(s: string): boolean {
+			return s.length === 5 && numberRegexp.test(s);
 		}
 	}
 }

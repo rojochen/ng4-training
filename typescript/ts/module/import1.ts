@@ -1,2 +1,2 @@
 
-import * as $ from "jQuery";
+import * as $ from "jquery";

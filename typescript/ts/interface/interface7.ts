@@ -1,31 +1,34 @@
-{
-    interface ClockConstructor {
-        //constructor interface
-        new(hour: number, minute: number): ClockInterface;
-    }
-    //Clock的Interface
-    interface ClockInterface {
-        tick();
-    }
-    //實作
-    class DigitalClock implements ClockInterface {
-        constructor(h: number, m: number) {
-            console.log('DigitalClock constructor');
-        }
-        tick() {
-            console.log("beep beep");
-        }
-    }
-    let cc: ClockConstructor;
-    //實作interface的constructor
-    let clock: DigitalClock = new cc(1, 1);
-    function createObject(cc : ClockConstructor ){
-        //interface 參數使用
-        let concreteObject: DigitalClock = new cc(1,3);
-        concreteObject.tick();
-        return concreteObject;
-
-    } 
-    createObject(DigitalClock).tick();
-
+//約束class的constructor
+interface ClockConstructor {
+    //建立一個Constructor的合約
+    new (hour: number, minute: number): ClockInterface;
 }
+interface ClockInterface {
+    //合約的output
+    tick();
+}
+//create function 
+function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {
+    //動態new實體
+    return new ctor(hour, minute);
+}
+function printClock(ctor: ClockConstructor, hour: number, minute: number) {
+    let v =  new ctor(hour, minute);
+    console.log(v);
+}
+class DigitalClock implements ClockInterface {
+    constructor(h: number, m: number) { }
+    tick() {
+        console.log("beep beep");
+    }
+}
+class AnalogClock implements ClockInterface {
+    constructor(h: number, m: number) { }
+    tick() {
+        console.log("tick tock");
+    }
+}
+
+let digital = createClock(DigitalClock, 12, 17);
+let analog = createClock(AnalogClock, 7, 32);
+printClock(AnalogClock,1,1);

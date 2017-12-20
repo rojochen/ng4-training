@@ -24,6 +24,5 @@
         let concreteObject: DigitalClock = new cc(1,3);
         concreteObject.tick();
 
-    }
- 
+    } 
 }

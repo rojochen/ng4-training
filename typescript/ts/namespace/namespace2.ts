@@ -8,6 +8,9 @@ namespace com {
         }
     }
 }
+
 //JAVA package style !
 //其它不是很必要這樣
-let service : com.bt.crm.Service = null;
+{
+    let service : com.bt.crm.Service = null;
+}

@@ -5,7 +5,8 @@
     "removeComments": true,
     "outDir": "./js",
     "sourceMap": true,
-    "noImplicitThis": false
+    "noImplicitThis": false,
+    "allowJs": true
   },
   "exclude": [
       "node_modules"

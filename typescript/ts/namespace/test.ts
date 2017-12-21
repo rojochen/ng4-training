@@ -9,7 +9,7 @@ let strings = ["Hello", "98052", "101"];
 let validators: { [s: string]: Validation.StringValidator; } = {};
 validators["ZIP code"] = new Validation.ZipCodeValidator();
 validators["Letters only"] = new Validation.LettersOnlyValidator();
-
+// 此案例不能執行
 for (let s of strings) {
     for (let name in validators) {
         console.log( (validators[name].isAcceptable(s) ? " matches " : " does not match ") + name);

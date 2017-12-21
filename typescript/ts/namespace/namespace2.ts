@@ -12,5 +12,6 @@ namespace com {
 //JAVA package style ,不推 !
 {
     let service : com.bt.crm.Service = null;
+    // 此案例不能執行
     service.log();
 }

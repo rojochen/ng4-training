@@ -9,7 +9,7 @@
 	//interface extneds class
 	interface Point3d extends Point {
 		z: number;
-		//Point3d extends point
+		//Point3d extends point : 只會extend屬性不會有實作
 	}
 	(() => {
 		    let point3d: Point3d;

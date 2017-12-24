@@ -1,5 +1,5 @@
 // Named function
-function add1(x:number, y?:number):void {
+function add(x:number, y:number):void {
     console.log(x+y);
 }
 

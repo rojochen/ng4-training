@@ -3,10 +3,10 @@
 		color?: string;
 		width?: number;
 		[propName: string]: any;
-		//interface 有任意的屬性
+		//interface 能有任意的屬性,很彈性的設計
 	}
 	let SquareConfig: SquareConfig;
 	SquareConfig = {
-		height: 200
+		height: "200"
 	}
 }

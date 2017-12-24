@@ -1,6 +1,6 @@
-{//抽像class
+//抽像class
     abstract class Department {
-        constructor(public name: string) {
+        constructor(private name: string) {
         }
         printName(): void {
             console.log("Department name: " + this.name);
@@ -28,4 +28,3 @@
     department.printName();
     department.printMeeting();
     //department.generateReports(); // error: 以宣告類別為主
-}

@@ -11,6 +11,6 @@ namespace com {
 
 //JAVA package style ,不推 !
 {
-    let service : com.bt.crm.Service = null;
+    let service : com.bt.crm.Service  = {log(){ console.log("hello service")}};
     service.log();
 }

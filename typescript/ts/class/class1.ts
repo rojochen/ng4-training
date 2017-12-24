@@ -18,7 +18,7 @@
 			return new Animal(name);
 		}
 	}
-
+ 
 	//繼承關係
 	class Dog extends Animal {
 
